@@ -306,7 +306,7 @@ const Campaign = () => {
       // const response = await fetch('http://localhost:8000/campanias');
       // const data = await response.json();
       // setState(data.filter(item => item.company === 'Adidas'))
-      setState(data.filter(item => item.company === brand)) //TODO: recibir "company name" y settearlo como prop
+      setState(data.filter(item => item.company === brand))
     }
     campainItem();
   }, [])
