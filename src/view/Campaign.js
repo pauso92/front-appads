@@ -1,10 +1,10 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import CampaignList from "../component/CampaignList";
+import { useParams } from "react-router-dom";
 
 const data = [
   {
-    company: "Cevrolet",
+    company: "Chevrolet",
     campaniasTotal:[
       {
         campaniasAct: [
@@ -299,12 +299,14 @@ const data = [
 ]
 
 const Campaign = () => {
+  let { brand } = useParams();
   const [state, setState] = React.useState([])
   React.useEffect(() => {
     async function campainItem() {
       // const response = await fetch('http://localhost:8000/campanias');
       // const data = await response.json();
-      setState(data)
+      // setState(data.filter(item => item.company === 'Adidas'))
+      setState(data.filter(item => item.company === brand)) //TODO: recibir "company name" y settearlo como prop
     }
     campainItem();
   }, [])

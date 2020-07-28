@@ -1,15 +1,15 @@
 import React from "react";
 import CampaignItem from "./CampaignItem";
 
-export default function CampaignList(props) {
+const CampaignList = (props) => {
   return (
     <>
-      {/* {JSON.stringify(props.data[1])} */}
       {
         props.data.map((item) => {
-          return <CampaignItem data={item} />
+          return <CampaignItem data={item.campaniasTotal[0]} />
         })
       }
     </>
   );
 }
+export default CampaignList

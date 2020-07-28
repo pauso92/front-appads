@@ -1,7 +1,7 @@
 import React from "react";
 import BrandItem from "./BrandItem";
 
-export default function BrandList(props) {
+const BrandList = (props) => {
   return (
     <>
       {
@@ -12,3 +12,4 @@ export default function BrandList(props) {
     </>
   );
 }
+export default BrandList

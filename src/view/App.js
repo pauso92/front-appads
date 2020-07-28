@@ -16,7 +16,7 @@ const App = () => {
     <Router>
       <Switch>
         <Route path="/login" component={Login} />
-        <Route path="/campaign" component={Campaign} />
+        <Route path="/campaign/:brand" component={Campaign} />
         <Route path="/dashboard" component={Dashboard} />
         {/* <Route path="/auth" component={Auth} /> */}
         <Route path="/" component={Home} />

@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-export default function Nav() {
+const Nav = () => {
   return (
     <nav>
       <ul>
@@ -18,3 +18,4 @@ export default function Nav() {
     </nav>
   );
 }
+export default Nav

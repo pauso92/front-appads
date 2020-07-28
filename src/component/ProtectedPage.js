@@ -1,5 +1,6 @@
 import React from "react";
 
-export default function ProtectedPage() {
-    return <h3>Protected</h3>;
+const ProtectedPage = () => {
+  return <h3>Protected</h3>;
 }
+export default ProtectedPage

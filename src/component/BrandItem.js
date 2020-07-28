@@ -1,12 +1,13 @@
 import React from "react";
 import { Link } from 'react-router-dom'
 
-export default function BrandItem(props) {
+const BrandItem = (props) => {
   return (
     <>
-      <Link to="/campaign">
+      <Link to={`/campaign/${props.data.name}`}>
         <img src={props.data.img} />
       </Link>
     </>
   );
 }
+export default BrandItem

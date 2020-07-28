@@ -5,10 +5,9 @@ const CampaignItem = (props) => {
   return (
     <>
       {
-        props.data.campaniasTotal[0].campaniasAct && props.data.campaniasTotal[0].campaniasAct.map(i => {
+        props.data.campaniasAct && props.data.campaniasAct.map(i => {
           return (
             <>
-              <p>{JSON.stringify(i)}</p>
               <Link to="/dashboard">
                 <p>{JSON.stringify(i.title)}</p>
               </Link>
