@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import BrandList from "../component/BrandList"
+import BrandList from "../component/BrandList";
+import "../css/Home.css";
 
 const data = [
   {
@@ -65,9 +66,9 @@ const Home = () => {
   }, [])
 
   return (
-    <>
+    <div className="body">
       <BrandList data={state} />
-    </>
+    </div>
   );
 }
 export default Home
