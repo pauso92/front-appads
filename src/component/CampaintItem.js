@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-export default function BrandItem(props) {
+export default BrandItem = (props) => {
   return (
     <>
       <Link to="/dashboard">

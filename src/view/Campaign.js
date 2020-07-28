@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import CampainList from "../component/CampainList";
 
-export default function Dashboard() {
+const Campaign = () => {
   const [state, setState] = React.useState([])
   React.useEffect(() => {
     async function campainItem() {
@@ -18,3 +18,4 @@ export default function Dashboard() {
     </>
   );
 }
+export default Campaign

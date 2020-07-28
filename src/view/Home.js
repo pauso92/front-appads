@@ -8,7 +8,7 @@ export default function Auth() {
     async function brandItem() {
       const response = await fetch('http://localhost:8000/brand');
       const data = await response.json();
-      setState(data) 
+      setState(data)
     }
     brandItem();
   }, [])
