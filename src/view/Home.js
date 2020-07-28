@@ -53,7 +53,7 @@ const data = [
   },
 ]
 
-const Auth = () => {
+const Home = () => {
   const [state, setState] = React.useState([])
   React.useEffect(() => {
     async function brandItem() {
@@ -70,4 +70,4 @@ const Auth = () => {
     </>
   );
 }
-export default Auth
+export default Home
