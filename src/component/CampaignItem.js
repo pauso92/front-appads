@@ -8,38 +8,38 @@ const CampaignItem = (props) => {
       <h3 className="title">Campañas Activas:</h3>
       {
         props.data.campaniasAct !== undefined ?
-        props.data.campaniasAct.map(i => {
-          return (
-            <>
-              <div className="wrapCampaign">
-                <Link to="/dashboard">
-                  <h1 className="titleCampaign">{JSON.stringify(i.title)}</h1>
+          props.data.campaniasAct.map(i => {
+            return (
+              <>
+                <Link className="link" to="/dashboard">
+                  <div className="wrapCampaign">
+                    <h2 className="titleCampaign">{JSON.stringify(i.title)}</h2>
+                    <p className="objList"><span className="span">Titulo: </span> {JSON.stringify(i.obj)}</p>
+                    <p className="objLink"><span className="span">Link Campaña:</span> {JSON.stringify(i.link)}</p>
+                  </div>
                 </Link>
-                <p className="objList">{JSON.stringify(i.obj)}</p>
-                <p className="objLink">{JSON.stringify(i.link)}</p>
-              </div>
-            </>
-          )
-        }):
-        <h2>No hay campañas activas</h2>
+              </>
+            )
+          }) :
+          <h2 className="inactivas">No hay campañas activas</h2>
       }
       <h3 className="title">Campañas Finalizadas:</h3>
       {
-        props.data.campaniasEnding !== undefined ? 
-        props.data.campaniasEnding.map(i => {
-          return (
-            <div>
-              <div className="wrapCampaign">
-                <Link to="/dashboard">
-                  <h1 className="titleCampaign">{JSON.stringify(i.title)}</h1>
+        props.data.campaniasEnding !== undefined ?
+          props.data.campaniasEnding.map(i => {
+            return (
+              <div>
+                <Link className="link" to="/dashboard">
+                  <div className="wrapCampaign">
+                    <h1 className="titleCampaign">{JSON.stringify(i.title)}</h1>
+                    <h2 className="objList"><span className="span">Titulo: </span>{JSON.stringify(i.obj)}</h2>
+                    <a className="objLink"><span className="span">Link Campaña:</span>{JSON.stringify(i.link)}</a>
+                  </div>
                 </Link>
-                <h2 className="objList">{JSON.stringify(i.obj)}</h2>
-                <h3 className="objList">{JSON.stringify(i.link)}</h3>
               </div>
-            </div>
-          )
-        }) :
-        <h2>No hay campañas finalizadas</h2>
+            )
+          }) :
+          <h2 className="inactivas">No hay campañas finalizadas</h2>
       }
       <div className="wrapbutton">
         <Link to="/home">

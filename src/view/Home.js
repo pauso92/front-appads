@@ -2,6 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import BrandList from "../component/BrandList";
 import "../css/Home.css";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCoffee } from '@fortawesome/free-solid-svg-icons'
 
 const data = [
   {
@@ -67,13 +69,13 @@ const Home = () => {
 
   return (
     <>
-    <h1 className="title">AppAds</h1>
-    <div className="divSearch">
-      <input placeholder="Buscar" className="search"></input>
-    </div>
-    <div className="wrapBrandlist">
-      <BrandList className="brandList" data={state} />
-    </div>
+      <h1 className="title"><FontAwesomeIcon icon={faCoffee} /> AppAds</h1>
+      <div className="divSearch">
+        <input type="text" placeholder={<FontAwesomeIcon icon={faCoffee} />} className="search"></input>
+      </div>
+      <div className="wrapBrandlist">
+        <BrandList className="brandList" data={state} />
+      </div>
     </>
   );
 }

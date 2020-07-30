@@ -1,5 +1,5 @@
 .title{
-    font-size: 30px;
+    font-size: 35px;
     margin-left: 40px;
     color:#0f4c75;
     /* border: 1px solid red */
@@ -10,20 +10,9 @@
     border-radius: 10px;
     margin-left: 20px;
     width: 1200px;
-    height: 150px;
+    height: 200px;
 }
-.titleCampaign{
-    text-align: center;
-    text-decoration: none;
-    padding-top: 15px;
-    margin-left: 20px;
-    font-size: 35px;
-    color:#fbd46d;
-}
-.objList{
-    margin-left: 10px;
-    color: white;
-}
+
 .wrapbutton{
     /* border: 1px solid red; */
     display: flex;
@@ -43,6 +32,48 @@
     width: 500px;
     height: 60px;
 }
+.titleCampaign{
+    text-decoration: none;
+    text-align: center;
+    padding-top: 15px;
+    margin-left: 20px;
+    font-size: 35px;
+    color:#fbd46d;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.objList{
+    margin-left: 30px;
+    color: white;
+    font-size: 25px;
+    font-weight: 400;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.objLink{
+    text-decoration: none;
+    color: white;
+    margin-left: 30px;
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 .button:hover{
-    cursor: progress;
+    cursor: pointer;
+}
+
+.inactivas{
+    margin-left: 80px;
+    font-weight: 600;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.span{
+    color: #0f4c75;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+    text-decoration: none;
+    text-align: justify;
+}
+.link{
+    text-decoration: none;
+}
+.link:hover{
+    cursor: wait;
 }
