@@ -15,8 +15,8 @@ const CampaignItem = (props) => {
                 <Link to="/dashboard">
                   <h1 className="titleCampaign">{JSON.stringify(i.title)}</h1>
                 </Link>
-                <h2 className="objList">{JSON.stringify(i.obj)}</h2>
-                <h3 className="objList">{JSON.stringify(i.link)}</h3>
+                <p className="objList">{JSON.stringify(i.obj)}</p>
+                <p className="objLink">{JSON.stringify(i.link)}</p>
               </div>
             </>
           )
@@ -43,7 +43,7 @@ const CampaignItem = (props) => {
       }
       <div className="wrapbutton">
         <Link to="/home">
-          <a className="button">Ir a Empresas </a>
+          <button className="button">Ir a Empresas </button>
         </Link>
       </div>
     </>
