@@ -5,6 +5,7 @@ import {
 } from 'recharts';
 import { Link } from 'react-router-dom';
 import '../css/Dashboard.css'
+import { useHistory } from 'react-router-dom'
 
 const data = [
   {
@@ -31,7 +32,7 @@ const data = [
 ];
 
 const Dashboard = () => {
-
+  let history = useHistory()
   return (
     <div className="wrapGrafica">
       <div className="grafica">
@@ -53,7 +54,10 @@ const Dashboard = () => {
         </LineChart>
       </div>
       <div>
-        <Link to="/home"><button className="button">Regresar a campañas</button></Link>
+        {/* <Link to="/home"><button className="button">Regresar a campañas</button></Link> */}
+        <button type="button" onClick={() => history.goBack()}>
+          Regresar a campañas
+        </button>
       </div>
     </div>
   );
