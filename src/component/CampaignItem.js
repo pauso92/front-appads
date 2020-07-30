@@ -34,7 +34,7 @@ const CampaignItem = (props) => {
                   <h1 className="titleCampaign">{JSON.stringify(i.title)}</h1>
                 </Link>
                 <h2 className="objList">{JSON.stringify(i.obj)}</h2>
-                <h3 className="objList">{JSON.stringify(i.link)}</h3>
+                <a className="objLink">{JSON.stringify(i.link)}</a>
               </div>
             </div>
           )
