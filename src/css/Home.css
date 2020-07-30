@@ -1,5 +1,28 @@
-body {
-    margin:0px;
-    padding: 0px;
-    background-color: deepskyblue;
+body{
+    background-color: #bbe1fa;
+    display: flex;
+    margin: 0;
+    padding: 0;
 }
+.wrap{
+    /* align-items: center; */
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    align-content: center;
+    
+}
+.divSearch{
+    /* border: 1px solid red; */
+    display: flex;
+}
+.search{
+    width: 800px;
+    height: 50px;
+    margin-bottom: 30px;
+    justify-items: center;
+    border-radius: 10px;
+    font-size: 30px;
+    padding-left: 40px;
+}
+

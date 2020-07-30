@@ -1,3 +1,12 @@
-brand-item {
-    border: rgb(0, 255, 13) solid 1px;
+.wrap{
+    display: flex;
+    /* border: 1px solid black; */
+    width: 200px;
+}
+.lista{
+    /* border: 1px solid black; */
+    /* background-color:blue; */
+    width: 150px;
+    height: 150px;
+    margin: 20px;
 }

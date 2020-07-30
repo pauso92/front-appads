@@ -10,7 +10,7 @@ const data = [
     campaniasAct: 2,
     campaniasEnding: 3,
     campaniasTot: 5,
-    img: "https://via.placeholder.com/150/FFFFFF/000000/?text=Chevrolet",
+    img: "https://via.placeholder.com/150/3282b8/FFFFFF/?text=Chevrolet",
   },
   {
     name: "Adidas",
@@ -18,7 +18,7 @@ const data = [
     campaniasAct: 5,
     campaniasEnding: 0,
     campaniasTot: 5,
-    img: "https://via.placeholder.com/150/FFFFFF/000000/?text=Adidas",
+    img: "https://via.placeholder.com/150/3282b8/FFFFFF/?text=Adidas",
   },
   {
     name: "Grupo Bimbo",
@@ -26,7 +26,7 @@ const data = [
     campaniasAct: 4,
     campaniasEnding: 10,
     campaniasTot: 14,
-    img: "https://via.placeholder.com/150/FFFFFF/000000/?text=Bimbo",
+    img: "https://via.placeholder.com/150/3282b8/FFFFFF/?text=Bimbo",
   },
   {
     name: "Coca-Cola",
@@ -34,7 +34,7 @@ const data = [
     campaniasAct: 3,
     campaniasEnding: 0,
     campaniasTot: 3,
-    img: "https://via.placeholder.com/150/FFFFFF/000000/?text=Coca-Cola",
+    img: "https://via.placeholder.com/150/3282b8/FFFFFF/?text=Coca-Cola",
   },
   {
     name: "Viva Aerobus",
@@ -42,7 +42,7 @@ const data = [
     campaniasAct: 2,
     campaniasEnding: 1,
     campaniasTot: 3,
-    img: "https://via.placeholder.com/150/FFFFFF/000000/?text=Viva-Aerobus",
+    img: "https://via.placeholder.com/150/3282b8/FFFFFF/?text=Viva-Aerobus",
   },
   {
     name: "Hasbro",
@@ -50,7 +50,7 @@ const data = [
     campaniasAct: 0,
     campaniasEnding: 2,
     campaniasTot: 2,
-    img: "https://via.placeholder.com/150/FFFFFF/000000/?text=Hasbro",
+    img: "https://via.placeholder.com/150/3282b8/FFFFFF/?text=Hasbro",
   },
 ]
 
@@ -66,9 +66,14 @@ const Home = () => {
   }, [])
 
   return (
-    <div className="body">
-      <BrandList data={state} />
+    <>
+    <div className="divSearch">
+      <input placeholder="Buscar" className="search"></input>
     </div>
+    <div className="wrapBrandlist">
+      <BrandList className="brandList" data={state} />
+    </div>
+    </>
   );
 }
 export default Home
