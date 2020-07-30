@@ -67,6 +67,7 @@ const Home = () => {
 
   return (
     <>
+    <h1 className="title">AppAds</h1>
     <div className="divSearch">
       <input placeholder="Buscar" className="search"></input>
     </div>

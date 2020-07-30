@@ -6,7 +6,7 @@
 }
 .wrapCampaign{
     /* border: 1px solid red; */
-    background-color: #1b262c;
+    background-color: #4f8a8b;
     border-radius: 10px;
     margin-left: 20px;
     width: 1200px;
@@ -14,17 +14,18 @@
 }
 .titleCampaign{
     text-align: center;
+    text-decoration: none;
     padding-top: 15px;
     margin-left: 20px;
-    font-size:20px;
-    color:#3282b8;
+    font-size: 35px;
+    color:#fbd46d;
 }
 .objList{
     margin-left: 10px;
     color: white;
 }
 .wrapbutton{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: flex;
     justify-content: center;
     margin-top:100px
@@ -37,5 +38,11 @@
     color: #ffffff;
     background-color: #1883ba;
     border-radius: 6px;
-    border: 2px solid #0016b0;
+    border: 2px solid #222831;
+    text-align: center;
+    width: 500px;
+    height: 60px;
+}
+.button:hover{
+    cursor: progress;
 }

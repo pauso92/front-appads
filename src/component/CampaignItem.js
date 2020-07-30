@@ -15,7 +15,7 @@ const CampaignItem = (props) => {
                   <p className="titleCampaign">{JSON.stringify(i.title)}</p>
                 </Link>
                 <p className="objList">{JSON.stringify(i.obj)}</p>
-                <p className="objList">{JSON.stringify(i.link)}</p>
+                <p className="objLink">{JSON.stringify(i.link)}</p>
               </div>
             </>
           )
@@ -24,7 +24,7 @@ const CampaignItem = (props) => {
       <h3 className="title">Campañas Finalizadas:</h3>
       <div className="wrapbutton">
         <Link to="/home">
-          <a className="button">Ir a Empresas </a>
+          <button className="button">Ir a Empresas </button>
         </Link>
       </div>
     </>
