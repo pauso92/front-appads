@@ -13,8 +13,8 @@ class Login extends React.Component {
           <div className="wrapp_user">
             <label className="user" htmlFor="email">email<br></br></label>
             <input name="email" id="email" className="input" placeholder="tucorreo@dominio.com" type="text"></input><br></br>
-            <label htmlFor="password" className="user">Password<br></br></label>
-            <input name="password" id="password" className="input" placeholder="Ingresa pasword" type="text"></input>
+            <label  htmlFor="password" className="user">Password<br></br></label>
+            <input name="password" id="password" className="input" placeholder="Ingresa pasword" type="password"></input>
           </div>
           <div className="div_register">
             <Link className="user_registrer" to="/Registrate">Registrate</Link>

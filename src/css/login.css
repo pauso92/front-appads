@@ -1,29 +1,14 @@
-
-.alogin{ 
-
-   margin-left: 800px;
-   display: flex;
-    align-self: center;
-    font-size: medium;
-    color:white!important;
-  
-    background-color:orange; 
+body{
+    display: flex;
     justify-content: center;
 }
-.alogin a{
-    margin-left: 15px;
-}
-.logoimg{
-    display: flex;
-    padding-top: 50px;
-   
-    margin-right: 5px;
-    margin-bottom: 10px;
-    z-index: 1;
+.wrap{
+    /* border: 1px solid red; */
     width: 500px;
-    height: 200px;
+    height: 400px;
+    margin-top: 200px;
+    background-color: #222831;
 }
-
 .w_titulo{
     /* border: 1px solid red; */
     height: 50px;
@@ -32,7 +17,7 @@
 .titulo{
     font-size: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: black;
+    color: #00a8cc;
     text-align: center;
 }
 .wrapp_user{
@@ -43,7 +28,7 @@
     /* border: 1px solid red; */}
     
 .user{
-    color: black;
+    color: #1883ba;
     font-size: 20px;
     /* margin-left: -18px; */
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -52,46 +37,43 @@
 }
 
 .input{
-    color: grey;
+    color: white;
     font-size: 18px;
     text-align: center;
     width: 300px;
-    height: 20px;
+    height: 50px;
     background-color: transparent;
     border: solid 1px;
     border-radius: 10px;
-    
-    
 }
 .input:focus{
     outline: none;
 }
 ::placeholder{
-    color: black  ;
+    color: white  ;
     font-size: 13px;
     border-bottom: 1px solid white;
     text-align: center;
     padding-bottom: 10px;
 }
+.wrap_button{
+    /* border: 1px solid red; */
+    display:flex;
+}
  .button{
-    width: 150px;
+    width: 10px;
     height: 40px;
     border-radius: 10px;
     background-color: #005082;
     border: #005082;
-    
     margin-top: 20px;
     margin-bottom: 20px;
-    margin-left: 118px;
+    /* margin-left: 118px; */
     color: #00a8cc;
-    justify-items: center;
+    justify-self: center;
     font-size: 18px;
     font-weight: bold;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-.button:hover{
-    background-color: #000839;
-    color: #005082;
 }
 .div_register{
     display: flex;
