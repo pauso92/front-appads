@@ -1,8 +1,38 @@
 .title{
+    font-size: 30px;
+    margin-left: 40px;
     color:#0f4c75;
-    border: 1px solid red
+    /* border: 1px solid red */
+}
+.wrapCampaign{
+    /* border: 1px solid red; */
+    background-color: #1b262c;
+    border-radius: 10px;
+    margin-left: 20px;
+    width: 1200px;
+    height: 150px;
 }
 .titleCampaign{
-    color:white;
-    border: 1px solid red
+    text-align: center;
+    padding-top: 15px;
+    margin-left: 20px;
+    font-size:20px;
+    color:#3282b8;
+}
+.objList{
+    margin-left: 10px;
+    color: white;
+}
+.wrapbutton{
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    margin-top:100px
+}
+.button{
+    width: 150px;
+    height: 60px;
+    font-size: 20px;
+    font-weight: 400;
+    margin-left: 80px;
 }

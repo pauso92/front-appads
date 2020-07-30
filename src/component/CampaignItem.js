@@ -5,28 +5,28 @@ import '../css/CampaignItem.css'
 const CampaignItem = (props) => {
   return (
     <>
-        <h3 className="title">Campañas Activas:</h3>
+      <h3 className="title">Campañas Activas:</h3>
       {
         props.data.campaniasAct && props.data.campaniasAct.map(i => {
           return (
             <>
-              <div>
+              <div className="wrapCampaign">
                 <Link to="/dashboard">
                   <p className="titleCampaign">{JSON.stringify(i.title)}</p>
                 </Link>
-                <p>{JSON.stringify(i.obj)}</p>
-                <p>{JSON.stringify(i.link)}</p>
+                <p className="objList">{JSON.stringify(i.obj)}</p>
+                <p className="objList">{JSON.stringify(i.link)}</p>
               </div>
             </>
           )
         })
-      })
-      
-              <div>
-                <Link to="/home">
-                  <button>Ir a Campañas</button>
-                </Link>
-              </div>
+      }
+      <h3 className="title">Campañas Finalizadas:</h3>
+      <div className="wrapbutton">
+        <Link to="/home">
+          <button className="button">Ir a Empresas </button>
+        </Link>
+      </div>
     </>
   );
 }
