@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import BrandList from "../component/BrandList";
 import "../css/Home.css";
+import '@fortawesome/react-fontawesome'
 
 const data = [
   {
@@ -69,7 +70,7 @@ const Home = () => {
     <>
     <h1 className="title">AppAds</h1>
     <div className="divSearch">
-      <input placeholder="Buscar" className="search"></input>
+      <input type="text" placeholder="&#xf007;  Buscar" className="search"></input>
     </div>
     <div className="wrapBrandlist">
       <BrandList className="brandList" data={state} />
