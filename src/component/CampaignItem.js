@@ -24,7 +24,7 @@ const CampaignItem = (props) => {
       <h3 className="title">Campañas Finalizadas:</h3>
       <div className="wrapbutton">
         <Link to="/home">
-          <button className="button">Ir a Empresas </button>
+          <a className="button">Ir a Empresas </a>
         </Link>
       </div>
     </>
