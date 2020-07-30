@@ -3,7 +3,6 @@ import React from 'react'
 import {
   LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend,
 } from 'recharts';
-import '../css/Dashboard.css';
 
 const data = [
   {
@@ -32,7 +31,7 @@ const data = [
 const Dashboard = () => {
 
   return (
-    <div className="divDashboard">
+    <div>
       <h1>Grafica de proyeccion</h1>
       <h2>Aqui podemos visualizar el comportamiento de la campaña.</h2>
       <LineChart
