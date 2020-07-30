@@ -7,21 +7,40 @@ const CampaignItem = (props) => {
     <>
       <h3 className="title">Campañas Activas:</h3>
       {
-        props.data.campaniasAct && props.data.campaniasAct.map(i => {
+        props.data.campaniasAct !== undefined ?
+        props.data.campaniasAct.map(i => {
           return (
             <>
               <div className="wrapCampaign">
                 <Link to="/dashboard">
-                  <p className="titleCampaign">{JSON.stringify(i.title)}</p>
+                  <h1 className="titleCampaign">{JSON.stringify(i.title)}</h1>
                 </Link>
-                <p className="objList">{JSON.stringify(i.obj)}</p>
-                <p className="objList">{JSON.stringify(i.link)}</p>
+                <h2 className="objList">{JSON.stringify(i.obj)}</h2>
+                <h3 className="objList">{JSON.stringify(i.link)}</h3>
               </div>
             </>
           )
-        })
+        }):
+        <h2>No hay campañas activas</h2>
       }
       <h3 className="title">Campañas Finalizadas:</h3>
+      {
+        props.data.campaniasEnding !== undefined ? 
+        props.data.campaniasEnding.map(i => {
+          return (
+            <div>
+              <div className="wrapCampaign">
+                <Link to="/dashboard">
+                  <h1 className="titleCampaign">{JSON.stringify(i.title)}</h1>
+                </Link>
+                <h2 className="objList">{JSON.stringify(i.obj)}</h2>
+                <h3 className="objList">{JSON.stringify(i.link)}</h3>
+              </div>
+            </div>
+          )
+        }) :
+        <h2>No hay campañas finalizadas</h2>
+      }
       <div className="wrapbutton">
         <Link to="/home">
           <a className="button">Ir a Empresas </a>
